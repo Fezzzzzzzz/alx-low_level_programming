@@ -1,2 +1,2 @@
 #!/bin/bash
-gpp %CFILE > c 
+gcc -E %CFILE > c 
