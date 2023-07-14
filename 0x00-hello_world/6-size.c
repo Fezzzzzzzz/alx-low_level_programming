@@ -1,5 +1,11 @@
 #include <stdio.h>
-/****/
+/**
+ * main - Entry point
+ *
+ * Descripion: A C program that prints the size of the data types 
+ *
+ * Return: always 0 (Success)
+ */
 int main(void)
 {
 	printf("Size of a char: %d byte(s)\n", sizeof(char));
