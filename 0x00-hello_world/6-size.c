@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Descripion: A C program that prints the size of the data types 
+ * Descripion: A C program that prints the size
  *
  * Return: always 0 (Success)
  */
