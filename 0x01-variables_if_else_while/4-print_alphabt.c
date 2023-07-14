@@ -15,8 +15,9 @@ int main(void)
 		while (i <= 122)
 		{
 			if (i == 101 || i == 113)
-			continue;
-
+			{
+				continue;
+			}
 			putchar(i);
 			i++;
 		}
