@@ -8,23 +8,23 @@
 
 int main(void)
 {
-	int i, j, k, h;
+	int i, j, k, h, start;
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = i + 1; j < 10; j++)
+		for (j = 0; j < 10; j++)
 		{
-			for (k = i + 2; k < 10; k++)
+			for (k = i; k < 10; k++)
 			{
-				for (h = i + 3; h < 10; h++)
+				start = (h == i) ? j + 1 : 1;
+				for (h = start; h < 10; h++)
 				{
-					
 					putchar(i + '0');
 					putchar(j + '0');
 					putchar(' ');
 					putchar(k + '0');
 					putchar(h + '0');
-					if (i < 7)
+					if (i != 9 || j != 8 || k != 9 || h != 9)
 					{
 						putchar(',');
 						putchar(' ');
