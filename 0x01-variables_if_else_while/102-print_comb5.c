@@ -10,14 +10,14 @@ int main(void)
 {
 	int i, j, k, h, start;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = 0; j < 10; j++)
+		for (j = 0; j <= 9; j++)
 		{
-			for (k = i; k < 10; k++)
+			for (k = i; k <= 9; k++)
 			{
-				start = (h == i) ? j + 1 : 1;
-				for (h = start; h < 10; h++)
+				start = (k == i) ? j + 1 : 1;
+				for (h = start; h <= 9; h++)
 				{
 					putchar(i + '0');
 					putchar(j + '0');
