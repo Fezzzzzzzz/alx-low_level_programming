@@ -1,8 +1,8 @@
 #include "main.h"
-
+#include <stdio.h>
 int main(void)
 	{
-		_putchar('h');
+		ahmed('h');
 	return 0;
 	}
 

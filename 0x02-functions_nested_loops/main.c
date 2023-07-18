@@ -1,5 +1,5 @@
 #include <stdio.h>
 
-int ahmed(int c) {
+int _putchar(int c) {
 	    return putchar(c);
 }
