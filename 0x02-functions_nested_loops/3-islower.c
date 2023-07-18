@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 
-int main(void)
+int _islower(int c)
 {
-	int c;
 
 	return (islower(c));
 }
