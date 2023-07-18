@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * _islower- function that computes the absolute value of an integer.
+ * _abs- function that computes the absolute value of an integer.
  *
  * @c:the num to check
  *
