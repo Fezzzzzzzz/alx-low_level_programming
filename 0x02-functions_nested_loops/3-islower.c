@@ -1,5 +1,7 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <stdbool.h>
+
 /**
  *  _islower - function that checks for lowercase character.
  */
