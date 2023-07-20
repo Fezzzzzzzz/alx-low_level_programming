@@ -7,7 +7,14 @@
  *
  * Return: 1 if c is uppercase, 0 otherwise
  */
-bool _isupper(int c)
+int  _isupper(int c)
 {
-		return (isupper(c));
+	if (c <= 90 && c >= 65)
+	{
+		return (1);
+	}
+ 	else
+	{
+		return (0);
+	}          
 }
