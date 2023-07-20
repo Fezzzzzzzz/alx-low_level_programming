@@ -15,25 +15,25 @@ int main(void)
 		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
-			_putchar(' ');
+			putchar(' ');
 			continue;
 		}
 		else if (i % 5 == 0)
 		{
 			printf("Buzz");
-			_putchar(' ');
+			putchar(' ');
 			continue;
 		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz");
-			_putchar(' ');
+			putchar(' ');
 			continue;
 		}
 		if (i >= 10)
-			_putchar(i / 10 + '0');
-		_putchar(i % 10 + '0');
-		_putchar(' ');
+			putchar(i / 10 + '0');
+		putchar(i % 10 + '0');
+		putchar(' ');
 	}
 	return (0);
 }
