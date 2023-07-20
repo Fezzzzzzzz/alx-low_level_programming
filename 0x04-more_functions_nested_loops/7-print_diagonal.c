@@ -20,11 +20,11 @@ void print_diagonal(int n)
 			{
 				putchar(' ');
 			}
-			putchar('\\');
-			putchar('\n');
+			_putchar('\\');
+			_putchar('\n');
 			k++;
 		}
 	}
 	else
-	putchar('\n');
+	_putchar('\n');
 }
