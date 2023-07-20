@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - prints Fizz for multiples of 3, Buzz for multiples of 5, and FizzBuzz
  * for multiples of both 3 and 5. Otherwise, prints the number.
@@ -14,25 +15,25 @@ int main(void)
 		if (i % 3 == 0 && i % 5 == 0)
 		{
 			printf("FizzBuzz");
-			putchar(' ');
+			_putchar(' ');
 			continue;
 		}
 		else if (i % 5 == 0)
 		{
 			printf("Buzz");
-			putchar(' ');
+			_putchar(' ');
 			continue;
 		}
 		else if (i % 3 == 0)
 		{
 			printf("Fizz");
-			putchar(' ');
+			_putchar(' ');
 			continue;
 		}
 		if (i >= 10)
-			putchar(i / 10 + '0');
-		putchar(i % 10 + '0');
-		putchar(' ');
+			_putchar(i / 10 + '0');
+		_putchar(i % 10 + '0');
+		_putchar(' ');
 	}
 	return (0);
 }
