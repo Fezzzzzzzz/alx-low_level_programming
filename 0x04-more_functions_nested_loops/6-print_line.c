@@ -3,6 +3,8 @@
 /**
  * print_line- function that prints line
  *
+ *@n: length of line
+ *
  * Return: void
  */
 
@@ -12,10 +14,11 @@ void print_line(int n)
 
 	for (i = 0; i <= n; i++)
 	{
-		if(n <= 0 ){
+		if (n <= 0)
+		{
 			break;
 		}
-		putchar('_');
+		_putchar('_');
 	}
-	putchar('\n');
+	_putchar('\n');
 }
