@@ -16,7 +16,10 @@ void more_numbers(void)
 		j = 0;
 		while (j <= 14)
 		{
-			printf("%d", j);
+			if (j >= 10)
+			putchar(j / 10 + '0');
+			putchar(j % 10 + '0');
+			j++;
 		}
 	putchar('\n');
 	}
