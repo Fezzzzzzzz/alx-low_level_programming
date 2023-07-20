@@ -29,6 +29,6 @@ int main(void)
 		}
 		printf("%d ", i);
 	}
-	printf("\b \b");
+	printf("\b \b\n");
 	return (0);
 }
