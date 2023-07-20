@@ -4,7 +4,7 @@
 /**
  * more_numbers- function that prints the numbers, from 0 to 14
  *
- * Return: nothing
+ * Return: void
  */
 
 
