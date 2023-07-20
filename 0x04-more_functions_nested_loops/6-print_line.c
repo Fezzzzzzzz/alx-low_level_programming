@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_line- function that prints line
  *
@@ -9,9 +10,12 @@ void print_line(int n)
 {
 	int i;
 
-	for (i = 1; i <= n; i++)
+	for (i = 0; i <= n; i++)
 	{
-		_putchar('_');
+		if(n <= 0 ){
+			break;
+		}
+		putchar('_');
 	}
 	putchar('\n');
 }
