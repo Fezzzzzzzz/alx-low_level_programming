@@ -5,30 +5,17 @@
  * for multiples of both 3 and 5. Otherwise, prints the number.
  * Return: 0
  */
-
 int main(void)
 {
-	int i;
+		int i;
 
-	for (i = 1; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
+		for (i = 1; i <= 100; i++)
 		{
-			printf("FizzBuzz ");
-			continue;
+		(i % 3 == 0) ? printf("Fizz") : 0;
+		(i % 5 == 0) ? printf("Buzz") : 0;
+		(i % 3 != 0 && i % 5 != 0) ? printf("%d", i) : 0;
+		(i != 100) ? printf(" ") : 0;
 		}
-		else if (i % 5 == 0)
-		{
-			printf("Buzz ");
-			continue;
-		}
-		else if (i % 3 == 0)
-		{
-			printf("Fizz ");
-			continue;
-		}
-		printf("%d ", i);
-	}
-	printf("\b \b\n");
-	return (0);
+				printf("\n");
+					return (0);
 }
