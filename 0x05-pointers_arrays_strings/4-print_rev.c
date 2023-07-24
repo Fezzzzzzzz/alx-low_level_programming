@@ -14,12 +14,10 @@ void print_rev(char *s)
 	{
 	}
 
-	while (i >= 0)
+	while (i--)
 	{
 		_putchar(s[i]);
-		i--;
 	}
-	printf("\b \b");
 	_putchar('\n');
 
 }
