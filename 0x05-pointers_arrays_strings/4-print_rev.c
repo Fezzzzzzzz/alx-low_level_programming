@@ -19,6 +19,7 @@ void print_rev(char *s)
 		_putchar(s[i]);
 		i--;
 	}
+	printf("\b \b");
 	_putchar('\n');
 
 }
