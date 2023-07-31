@@ -8,7 +8,6 @@
  */
 char *_strchr(char *s, char c)
 {
-	int i = 0;
 	int j = 0;
 
 	while (s[j])
@@ -18,14 +17,6 @@ char *_strchr(char *s, char c)
 			return (s + j);
 		}
 		j++;
-	}
-	while (s[i])
-	{
-		if (s[i] != c)
-		{
-			return (NULL);
-		}
-		i++;
 	}
 	return (0);
 }
