@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _strchr - locates a character in a string
  * @s: string to be scanned
@@ -8,15 +9,17 @@
  */
 char *_strchr(char *s, char c)
 {
-	int j = 0;
+	int	i;
 
-	while (s[j])
+	i = 0;
+	while (s[i])
 	{
-		if (s[j] == c)
-		{
-			return (s + j);
-		}
-		j++;
+		if (s[i] == (char)c)
+			return ((char *) &s[i]);
+		i++;
 	}
+	if ((char) !c)
+		return ((char *) &s[i]);
 	return (0);
 }
+
