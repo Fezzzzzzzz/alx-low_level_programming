@@ -9,9 +9,9 @@
 
 int helper(int n, int j)
 {
+	int i = 0;
 	if (n < 0)
 		return (-1);
-	int i = 0;
 
 up:;
 	n = (n + (j / n)) / 2;
