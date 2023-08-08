@@ -23,6 +23,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 	if (!ar)
-		return (NULL)
+		return (NULL);
 	return (ar);
 }
