@@ -1,4 +1,4 @@
-#include "calc.h"
+#include "3-calc.h"
 /**
  * main - program that performs simple operations
  * @argc: number of arguments
@@ -7,6 +7,8 @@
  */
 int main(int argc, char *argv[])
 {
+	int result;
+
 	if (argc > 4)
 	{
 		printf("Error\n");
@@ -22,9 +24,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (100);
 	}
-
-	int result = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
-
+	result = get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3]));
 	printf("%d\n", result);
 	return (0);
 }
