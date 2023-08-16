@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
 {
 	int result;
 
-	if (argc > 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		return (98);
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (99);
 	}
-	if ((atoi(argv[2]) == '/' || atoi(argv[2]) == '%') && atoi(argv[3]) == 0)
+	if ((argv[2][0] == '/' || argv[2][0] == '%') && atoi(argv[3]) == 0)
 	{
 		printf("Error\n");
 		return (100);
