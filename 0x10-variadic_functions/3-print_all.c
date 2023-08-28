@@ -43,33 +43,30 @@ void print_string(va_list args)
 void print_all(const char * const format, ...)
 {
 	helper help[] = {
-	{'i', print_int},
-	{'c', print_char},
-	{'f', print_float},
-	{'s', print_string}
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
+		{NULL, NULL}
 	};
 	va_list args;
 	int i = 0, j = 0;
+	char *sep = "";
 
 	va_start(args, format);
 	while (format && format[i])
 	{
 		j = 0;
-		while (j < 4)
+		while (j < 4 && format[i] != help[j].a[0])
+			++j;
+		if (j < 4)
 		{
-			if (format[i] == help[j].a)
-			{
-				help[j].b(args);
-				if (format[i] + 2 != '\0')
-				{
-					printf(", ");
-				}
-			}
-			j++;
+			printf("%s", sep);
+			help[j].b(args);
+			sep = ", ";
 		}
-		i++;
+		++i;
 	}
-	printf("\b \b\b \b");
-	va_end(args);
 	printf("\n");
+	va_end(args);
 }

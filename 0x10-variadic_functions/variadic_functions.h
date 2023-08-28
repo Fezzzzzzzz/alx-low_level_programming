@@ -8,7 +8,7 @@
  */
 typedef struct helper
 {
-	int a;
+	char *a;
 	void (*b)(va_list);
 } helper;
 int sum_them_all(const unsigned int n, ...);
