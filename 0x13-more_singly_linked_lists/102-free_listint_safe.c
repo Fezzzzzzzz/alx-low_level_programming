@@ -1,11 +1,10 @@
 #include "lists.h"
-
 /**
- * loop- function that get length of a loop
+ * loop2- function that get length of a loop
  * @head:  pointer to the head of the list
  * Return: number of nodes in the loop
  */
-size_t loop(const listint_t *head)
+size_t loop2(const listint_t *head)
 {
 	const listint_t *slow_ptr, *fast_ptr;
 	size_t length = 1;
@@ -39,7 +38,6 @@ size_t loop(const listint_t *head)
 		slow_ptr = slow_ptr->next;
 		fast_ptr = fast_ptr->next->next;
 	}
-
 	return (0);
 }
 
@@ -53,7 +51,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *tmp;
 	size_t length, i;
 
-	length = loop(*h);
+	length = loop2(*h);
 
 	if (length == 0)
 	{
