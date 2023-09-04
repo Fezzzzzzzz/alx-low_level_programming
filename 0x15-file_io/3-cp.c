@@ -11,11 +11,8 @@ int main(int argc, char *argv[])
 	char buff[1024];
 
 	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		return (97);
-	}
-	file_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
+	file_to = open(argv[2], O_RDWR | O_TRUNC | O_CREAT, 00664);
 	file_from = open(argv[1], O_RDONLY);
 	if (file_from == -1)
 	{
@@ -23,18 +20,12 @@ int main(int argc, char *argv[])
 		return (98);
 	}
 	if (file_to == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]);
-		return (99);
-	}
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[1]), exit(99);
 	while ((_read = read(file_from, buff, 1024)) > 0)
 	{
 		_write = write(file_to, buff, _read);
 		if (_write == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			return (99);
-		}
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 	}
 	if (_read == -1)
 	{
