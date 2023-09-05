@@ -9,7 +9,6 @@ int main(int argc, char *argv[])
 {
 	int file_to, file_from, _read, _write;
 	char buff[1024];
-	char buf[1024];
 
 	if (argc != 3)
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
